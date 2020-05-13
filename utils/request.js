@@ -6,8 +6,7 @@
  */
 const app = getApp();
 let token = '';
-function _get(url, data, successf, fail, complete, type){
-  data.toksource = 7;
+function _get(url, data, successf, fail, complete){
   data.token = app.globalData.userInfo ? app.globalData.userInfo.token:'';
   wx.request({
     url: url,
@@ -17,7 +16,16 @@ function _get(url, data, successf, fail, complete, type){
     data: data,
     success:(res)=>{
       if (res.statusCode == '200') {
-        successf(res);
+        if (res.data.status == 0) {
+          successf(res);
+        } else {
+          //做一些错误的处理
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500
+          });
+        }   
       } else {
         wx.showToast({
           title: res.statusCode,
@@ -39,8 +47,7 @@ function _get(url, data, successf, fail, complete, type){
  * success 成功的回调
  * fail 失败的回调
  */
-function _post(url, data, successf, fail, complete,type){
-  data.toksource = 7
+function _post(url, data, successf, fail, complete){
   data.token = app.globalData.userInfo ? app.globalData.userInfo.token : '';
   wx.request({
     url: url,
@@ -52,7 +59,16 @@ function _post(url, data, successf, fail, complete,type){
     data:data,
     success: function (res) {
       if (res.statusCode == '200') {
-        successf(res);
+        if(res.data.status == 0){
+          successf(res);
+        }else{
+          //做一些错误的处理
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500
+          });
+        }        
       } else {
         wx.showToast({
           title: res.statusCode,
@@ -76,8 +92,7 @@ function _post(url, data, successf, fail, complete,type){
 * success 成功的回调
 * fail 失败的回调
 */
-function _post_json(url, data, successf, fail, complete,type){
-  data.toksource = 7
+function _post_json(url, data, successf, fail, complete){
   data.token = app.globalData.userInfo ? app.globalData.userInfo.token : '';
   wx.request({
     url: url,  
@@ -85,7 +100,16 @@ function _post_json(url, data, successf, fail, complete,type){
     data: data,
     success: function (res) {
       if (res.statusCode == '200'){
-        successf(res);
+        if (res.data.status == 0) {
+          successf(res);
+        } else {
+          //做一些错误的处理
+          wx.showToast({
+            title: res.data.msg,
+            icon: 'none',
+            duration: 1500
+          });
+        }   
       }else{
         wx.showToast({
           title: res.statusCode,
@@ -102,8 +126,6 @@ function _post_json(url, data, successf, fail, complete,type){
     }
   });
 };
-
-
 
 module.exports = {
   _get: _get,
