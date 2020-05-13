@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取用户头像 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- 获取用户手机号 -->
+  <block wx:if="{{hasUserInfo}}">
+    <view class="info">申请获取你的微信绑定的手机号</view>
+    <button class='btn' open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">获取手机号</button>
+  </block>
+ 
+</view>
