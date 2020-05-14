@@ -1,0 +1,20 @@
+.userImg{
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.userImg image{
+  width: 100rpx;
+  object-fit: cover;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.userImg .name{
+  font-size: 14px;
+  margin-top: 20rpx;
+  color: green;
+}
+
+.imgList image{
+  width: 80rpx;
+  margin: 20rpx;
+}

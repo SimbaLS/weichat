@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="userImg" catchtap="hintApp" data-type="3">
+    <image src="{{user.head}}" binderror="errorImg" lazy-load="true" mode="widthFix"></image>
+    <view class="name">{{user.name}}</view>
+  </view>
+  <!-- 多图-->
+  <view>多图</view>
+  <view class="imgList">
+    <block wx:for='{{imgList}}'>
+      <image src="{{item}}" binderror="avatarError" data-index="{{index}}" mode="widthFix" />
+    </block>
+  </view>
+
+</view>
