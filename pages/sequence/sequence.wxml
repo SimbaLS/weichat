@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:if="{{userInfo}}">
+    <text class="log-item">{{userInfo.name}}</text>
+  </block>
+  <block wx:else>
+    <text class="log-item">没有脑袋</text>
+  </block>
+</view>

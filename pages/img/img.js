@@ -13,6 +13,7 @@ Page({
       'https://upload.jianshu.io/users/upload_avatars/3120799/d78ee51-34c2.png'
 
     ],
+    pic: ['https://goss.cfp.cn/creative/vcg/800/new/VCG211225432073.jpg'],
     noHead: '/img/noHead.png',
   },
   onLoad: function () {
@@ -33,6 +34,19 @@ Page({
     this.setData({
       [errorImg]: this.data.noHead
     })
-  }
+  },
+  //图片点击放大事件
+   imgYu(event) {    
+     let src = event.currentTarget.dataset.src; //获取data-src
+     let imgList = event.currentTarget.dataset.list; //获取data-list
+     //图片预览
+     wx.previewImage({
+       current: src, // 当前显示图片的http链接
+       urls: imgList, // 需要预览的图片http链接列表
+       success(){
+         console.log(imgList)
+       }
+     });
+  },
 
 })

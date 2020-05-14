@@ -11,5 +11,13 @@
       <image src="{{item}}" binderror="avatarError" data-index="{{index}}" mode="widthFix" />
     </block>
   </view>
+  <!-- 一张图 高度固定 宽度自适应-->
+  <block wx:if="{{pic}}">
+    <view class="bgOnlyPic" bindtap="imgYu" data-list="{{pic}}" data-src="{{pic[0]}}" style="background-image:url('{{pic[0]}}')">
+    </view>
+    <view class="left">
+      <image src="{{pic[0]}}" class="height"  mode="aspectFit"></image>
+    </view>
+  </block>
 
 </view>
