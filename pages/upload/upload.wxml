@@ -1,0 +1,41 @@
+<!--upload/upload.wxml-->
+<!-- ul 图片 视频 -->
+<view class="source clearfix">
+  <!-- 图片 -->
+  <block wx:if="{{worksImgs.length>0}}">
+    <block wx:for="{{worksImgs}}" wx:key="key">
+      <view class="box">
+        <image src="{{item}}" mode="aspectFill"></image>
+        <view class="weui-icon" data-index="{{index}}" bindtap="deleteImg">
+          <image src="/img/del.png"></image>
+        </view>
+      </view>
+    </block>
+    <view class="box" wx:if="{{worksImgs.length<9&&worksImgs.length>0}}" bindtap="chooseImg">
+      <image src='/img/pic_add.png' mode="widthFix"></image>
+    </view>
+  </block>
+  <!-- 视频 -->
+  <block wx:if="{{videoImg}}">
+    <view class="box dy_video">
+      <image src="{{videoImg}}" mode="aspectFill"></image>
+      <view class="box play">
+        <image src="/img/video.png"></image>
+      </view>
+      <view class="weui-icon" bindtap="deleteVideo">
+       <image src="/img/del.png"></image>
+      </view>
+      <!-- <view class="video">
+            <video binderror="videoErrorCallback" src='{{videoSrc}}' mode="aspectFill"  play-btn-position="center" show-fullscreen-btn="{{false}}" bindfullscreenchange="fullScreen">
+            </video>
+            <view class="cover-view" bindtap="deleteVideo"></view>
+          </view> -->
+    </view>
+  </block>
+</view>
+  <!-- 选择图片视频 -->
+  <view class="page-bottom disFlex">
+    <view class="pic" bindtap="chooseImg">选择图片</view>
+    <view class="pic" bindtap="chooseVideo">选择视频</view>
+    <view class="publish" bindtap="verify">发布</view>
+  </view>

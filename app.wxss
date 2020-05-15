@@ -8,3 +8,30 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.disFlex {
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.disFlex>view,.disFlex>text,.disFlex>image,.disFlex>textarea,.disFlex>button{
+  flex: 0 0 auto;
+}
+.box {
+  position: relative;
+}
+
+.box > image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}

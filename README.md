@@ -11,3 +11,7 @@
 ## untils 
   *  request.js 封装wx.request请求
   *  config.js 请求域名切换，接口封装
+  *  operate.js 封装了一些常用的方法
+## upload 
+  * 上传阿里云相关文件
+  * uploadFile.js 上传主要文件 其他是相关算法  
