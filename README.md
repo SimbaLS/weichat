@@ -1,12 +1,17 @@
 ## 文件说明
+### page
 ## index 
   * 登录授权,获取手机号
 ## img 
   * 图片错误替换默认图 , 图片点击放大
 ## sequence
   *  onLaunch和onload先后顺序
+## upload
+  *  选择图片、预览，上传到阿里云  
 ## app.js
   autoUpdate 检测版本更新
+
+### 操作文件 
 
 ## untils 
   *  request.js 封装wx.request请求
