@@ -6,7 +6,9 @@
     "pages/upload/upload",
     "pages/textarea/textarea",
     "pages/scrollToCeiling/scrollToCeiling",
-    "pages/useComponent/useComponent"
+    "pages/useComponent/useComponent",
+    "pages/pageA/pageA",
+    "pages/pageB/pageB"
   ],
   "window": {
     "backgroundTextStyle": "light",

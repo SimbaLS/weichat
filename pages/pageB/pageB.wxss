@@ -1,0 +1,4 @@
+/* pages/pageB/pageB.wxss */
+.content{
+  text-align: center;
+}

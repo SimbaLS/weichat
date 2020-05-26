@@ -1,0 +1,8 @@
+<!--pages/pageA/pageA.wxml-->
+<view class="content">
+  <view>
+    <text>pageA：</text>
+    <text>{{num}}</text>
+  </view>
+  <button type="primary" bindtap="goPage">to pageB</button>
+</view>

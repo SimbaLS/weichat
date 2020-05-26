@@ -87,6 +87,13 @@
 					"id": -1,
 					"name": "pages/useComponent/useComponent",
 					"pathName": "pages/useComponent/useComponent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pageA/pageA",
+					"pathName": "pages/pageA/pageA",
 					"scene": null
 				}
 			]

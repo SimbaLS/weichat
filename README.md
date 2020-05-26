@@ -17,6 +17,8 @@
   ## useCompontent 
     * 组件和模板的区别
     * 组件向page传值（通信）   
+  ## pageA pageB
+    * A <-> B navigateTo页面间传值  
   ## template 模板
 ### component
   ## content 

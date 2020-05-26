@@ -1,0 +1,10 @@
+<!--pages/pageB/pageB.wxml-->
+<view class="content">
+  <view>
+    <text>pageB：</text>
+    <text>{{num}}</text>
+  </view>
+  <view wx:if="{{dto}}">{{dto.text}}--{{dto.name}}</view>
+  
+  <button type="primary" bindtap="addNum" plain="true">增加</button>
+</view>
