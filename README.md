@@ -19,6 +19,9 @@
     * 组件向page传值（通信）   
   ## pageA pageB
     * A <-> B navigateTo页面间传值  
+  ## changTab
+    * tab切换滚动定位
+
   ## template 模板
 ### component
   ## content 

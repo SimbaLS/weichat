@@ -1,0 +1,51 @@
+/* pages/changeTab/changTab.wxss */
+#nav {
+  background: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  padding-top: 36rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #F5F5F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  justify-content: center;
+}
+#nav view {
+  font-size: 30rpx;
+  font-weight: 500;
+  margin: 0 110rpx;
+  color: #808080;
+  padding-bottom: 12rpx;
+}
+#nav view.active {
+  color: #333333;
+  border-bottom: 8rpx solid #FCE84E;
+  font-weight: bolder;
+}
+
+
+.swiper-box{
+ height: 100%;
+  margin-top:56rpx;
+   /* position: relative; */
+}
+.swiper-box  .test{
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%
+}
+
+.swiper-items{
+  height: 100%;
+}
+.scroll-views{
+  height: 100%;
+}
+.name{
+  height: 60rpx;
+  padding: 20rpx;
+  text-align: center;
+}

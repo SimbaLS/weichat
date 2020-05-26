@@ -1,0 +1,39 @@
+<!--changTab.wxml-->
+<view class="content">
+  <view id="nav" class="disFlex">
+    <view class="swiper-tab-list {{currentTab==0 ? 'active' : ''}}" data-current="0" bindtap="swichNav">已读</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="swichNav">未读</view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="0" bindchange="bindChange" style="height:{{swiper_height}}">
+    <swiper-item class="swiper-items swiper-items0">
+      <view id="start0"></view>
+      <!-- 已读 -->
+      <view class="readList">
+        <block wx:if="{{read.length>0}}">
+          <block wx:for="{{read}}" wx:for-item="r_item" wx:key="userId">
+            <view class="name">{{r_item.name}}</view>
+            <view class="line"></view>
+          </block>
+        </block>
+      </view>
+      <view id="end0"></view>
+
+    </swiper-item>
+    <!-- 未读 -->
+    <swiper-item class="swiper-items swiper-items1">
+      <view id="start1"></view>
+      <view class="noReadList">
+        <block wx:if="{{noRead.length>0}}">
+          <block wx:for="{{noRead}}" wx:for-item="y_item" wx:key="userId">
+             <view class="name">{{y_item.name}}</view>
+            <view class="line"></view>
+          </block>
+        </block>
+      </view>
+
+      <view id="end1"></view>
+    </swiper-item>
+  </swiper>
+
+</view>

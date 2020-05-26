@@ -8,7 +8,8 @@
     "pages/scrollToCeiling/scrollToCeiling",
     "pages/useComponent/useComponent",
     "pages/pageA/pageA",
-    "pages/pageB/pageB"
+    "pages/pageB/pageB",
+    "pages/changeTab/changTab"
   ],
   "window": {
     "backgroundTextStyle": "light",

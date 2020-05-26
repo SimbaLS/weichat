@@ -94,6 +94,13 @@
 					"id": -1,
 					"name": "pages/pageA/pageA",
 					"pathName": "pages/pageA/pageA",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/changeTab/changTab",
+					"pathName": "pages/changeTab/changTab",
 					"scene": null
 				}
 			]
