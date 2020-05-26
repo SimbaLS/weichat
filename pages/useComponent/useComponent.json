@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "组件使用",
+  "usingComponents": {
+    "content": "../components/content/content"    
+  }
+}

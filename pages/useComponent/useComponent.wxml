@@ -1,0 +1,20 @@
+<import src="/pages/template/noContent.wxml" />
+<!-- useComponent.wxml -->
+<view class="content">
+  <view class="title">组件使用:</view>
+  <view class="list" wx:for="{{contentList}}" wx:key="contentId">
+    <content id="content" dto="{{item}}"  bind:numChange="numChange"></content>
+  </view>
+  <view wx:if="{{changeVal}}">收到值：{{changeVal}}</view>
+
+
+  <view class="template">
+    <view class="title">template使用：</view>
+    <!-- 用is来定义使用哪个模板，对应的是模板的name data里是传的值 键值对-->
+    <template is="noContent" data="{{show:true,type:3,text:'下面是模板呈现的'}}"></template>
+
+    <view class="list" wx:for="{{contentList}}" wx:for-item="c_item" wx:key="contentId">
+      <template is="content" data="{{...c_item}}"></template>
+    </view>
+  </view>
+</view>

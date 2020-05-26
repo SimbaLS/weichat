@@ -1,0 +1,7 @@
+.num{
+  margin-left: 20rpx;
+  color: rgb(20, 230, 65)
+}
+.noHead{
+  width: 40rpx;
+}

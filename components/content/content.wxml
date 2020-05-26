@@ -1,0 +1,6 @@
+<view class="clearfix" data-contentid="{{item.contentId}}">
+  <view class="inco_list inco_praise" data-contentid="{{dto.contentId}}" >
+    <text catchtap="numToTop">{{dto.name}}:{{dto.title}}</text>
+    <text class="num" catchtap="addNum">get: {{dto.num}}</text>
+  </view>
+</view>

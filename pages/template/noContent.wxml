@@ -1,0 +1,17 @@
+<!-- 提示 -->
+<template name="noContent">
+  <view class="noContent" hidden="{{!show}}">
+    <image class="noHead" src="/img/noHead.png" mode="widthFix"> </image>
+    <view wx:if="{{type==2}}">暂无内容</view>
+    <view wx:elif="{{type==5}}">暂无用户</view>
+    <view wx:else>{{text}}</view>
+  </view>
+</template>
+<!-- 内容 -->
+<template name="content">
+  <view>
+    <text>{{name}}: {{title}} </text>
+    <!-- 点击事件定义在引用模板的js文件里 -->
+    <text class="num" bindtap="touchMe">get:{{num}}</text>
+  </view>
+</template>

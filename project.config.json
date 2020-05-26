@@ -80,6 +80,13 @@
 					"id": -1,
 					"name": "pages/scrollToCeiling/scrollToCeiling",
 					"pathName": "pages/scrollToCeiling/scrollToCeiling",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/useComponent/useComponent",
+					"pathName": "pages/useComponent/useComponent",
 					"scene": null
 				}
 			]

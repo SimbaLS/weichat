@@ -14,6 +14,13 @@
     * textarea和video全屏问题
   ## scrollToCeiling 
     * 滚动吸顶   
+  ## useCompontent 
+    * 组件和模板的区别
+    * 组件向page传值（通信）   
+  ## template 模板
+### component
+  ## content 
+    * 组件    
 
 ### 操作文件 
 

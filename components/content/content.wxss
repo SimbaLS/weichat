@@ -1,0 +1,5 @@
+/* components/content/content.wxss */
+.num{
+  margin-left: 20rpx;
+  color: firebrick
+}

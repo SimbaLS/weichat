@@ -5,7 +5,8 @@
     "pages/sequence/sequence",
     "pages/upload/upload",
     "pages/textarea/textarea",
-    "pages/scrollToCeiling/scrollToCeiling"
+    "pages/scrollToCeiling/scrollToCeiling",
+    "pages/useComponent/useComponent"
   ],
   "window": {
     "backgroundTextStyle": "light",

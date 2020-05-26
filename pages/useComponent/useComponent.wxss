@@ -1,0 +1,10 @@
+/* pages/useComponent/useComponent.wxss */
+@import "/pages/template/noContent.wxss";
+
+.title{
+  color: #1411e6;
+  font-size:20px;
+}
+.template{
+  margin-top: 20px;
+}
