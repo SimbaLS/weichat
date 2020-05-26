@@ -8,6 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.content{
+   padding: 40rpx;
+}
 
 .disFlex {
   display: -webkit-box;

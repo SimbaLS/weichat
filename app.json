@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/img/img",
     "pages/sequence/sequence",
-    "pages/upload/upload"
+    "pages/upload/upload",
+    "pages/textarea/textarea",
+    "pages/scrollToCeiling/scrollToCeiling"
   ],
   "window": {
     "backgroundTextStyle": "light",

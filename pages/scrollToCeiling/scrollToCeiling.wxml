@@ -1,0 +1,13 @@
+<view >
+  <view class="text">文字内容区域占位</view>
+  <view id="main">
+  
+  <view id="nav" class="column {{isFixedTop?'fixed':''}}">
+      <view class="swiper-tab-list active">动态</view>
+      <view class="swiper-tab-list">活动</view>
+    </view>
+    <view id="content" class="{{isFixedTop?'hasTop':''}}">
+      主内容区
+    </view>
+    </view>
+</view>

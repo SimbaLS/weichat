@@ -1,0 +1,56 @@
+
+.text{
+  height: 300rpx;
+  text-align: center;
+  line-height: 300rpx;
+  background: #e0e0e0;
+}
+/* 导航 */
+
+#nav {
+  background: #fff;
+  padding-top: 36rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+
+#nav view {
+  display: inline-block;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin: 0 8rpx 0 30rpx;
+  color: #666a72;
+  padding: 0 30rpx 12rpx;
+}
+
+#nav view.active {
+  color: #000a2d;
+  border-bottom: 8rpx solid #ffcf00;
+  font-weight: bolder;
+}
+
+#main .column {
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+#main .column {
+  top: 0;
+}
+
+.column.fixed {
+  position: fixed;
+}
+
+#nav view.active {
+  color: #000a2d;
+  border-bottom: 8rpx solid #ffcf00;
+  font-weight: bolder;
+}
+#content{
+  height: 1700rpx;
+  background: #EFEFEF;
+  text-align: center;
+  padding-top: 40rpx;
+}

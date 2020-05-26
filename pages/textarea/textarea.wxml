@@ -1,0 +1,13 @@
+<view class="content">
+  <view class="textarea" style="display:{{fullScreen?'none':'block'}}">
+    <textarea name="content" placeholder-class="input-placeholder" placeholder="分享校园里的故事…" cursor-spacing="30" show-confirm-bar="false" auto-height bindblur="bindTextAreaBlur"> </textarea>
+  </view>
+  <view class="source">
+
+    <view class="video" wx:if="{{videoImg}}">
+      <video binderror="videoErrorCallback" src='{{videoSrc}}' mode="aspectFill" play-btn-position="center" bindfullscreenchange="fullScreen">
+      </video>
+    </view>
+    <view wx:else bindtap="chooseVideo">选择视频</view>
+  </view>
+</view>
